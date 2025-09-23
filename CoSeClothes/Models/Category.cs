@@ -1,9 +1,12 @@
-﻿namespace CoSeClothes.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CoSeClothes.Models
 {
     public class Category
     {
         public int Id { get; set; }
-        public int Name { get; set; }
+        [Required]
+        public string Name { get; set; }
         public int DisplayOrder { get; set; }
     }
 }
