@@ -29,7 +29,8 @@ namespace CoSeClothes.Controllers
             {
                 ModelState.AddModelError("name", "The Display Order cannot exactly match the Name.");
             }
-            if(ModelState.IsValid)
+
+            if (ModelState.IsValid)
             {
                 _db.Categories.Add(obj);
                 _db.SaveChanges();
